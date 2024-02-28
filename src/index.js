@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(r => r.json())
     .then(data => {
       addSubmitListener();
+      deleteRamen();
       data.forEach((ramen) => {
         displayRamens(ramen);
       })
@@ -60,7 +61,7 @@ function addSubmitListener() {
     
     e.preventDefault();
 
-    //console.log(e.target['name'].value)
+  
     
     fetch('http://localhost:3000/ramens', {
       method: "POST",
@@ -97,19 +98,27 @@ function addSubmitListener() {
 }
 
 
-// function deleteRamen(RamenID) {
-//   const deleteButton = document.createElement('button')
-//   deleteButton.className.input[type="submit"]
-//   const form = document.querySelector("#new-ramen")
-//   form.append(deleteButton)
+function deleteRamen(RamenID) {
+  const deleteButton = document.createElement('button')
+  deleteButton.style.padding = "0.5rem"
+  deleteButton.style.width = "100%"
+  deleteButton.textContent = "Delete"
+  const form = document.querySelector("#new-ramen")
+  form.append(deleteButton)
 
-//   deleteButton.addEventListener('click', (e) => {
-//     fetch(`http://localhost:3000/ramens/${RamenID}`), {
-//       method: 'DELETE'
-//     }
-//   })
+  deleteButton.addEventListener('click', (e) => {
+    fetch(`http://localhost:3000/ramens/${RamenID}`), {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: null
+      }
+    }
+  )
   
-// }
+} 
+
 const main = () => {
   // Invoke displayRamens here
   displayRamens();
