@@ -39,70 +39,7 @@
       "image": "./assets/ramen/kojiro.jpg",
       "rating": 6,
       "comment": "Perfect for a cold night."
-    },
-    {
-      "id": "4be6",
-      "name": "Test",
-      "restaurant": "Test",
-      "image": "./assets/ramen/naruto.jpg",
-      "rating": "10",
-      "comment": "SO gooood!!"
-    },
-    {
-      "id": "7e23",
-      "name": "",
-      "restaurant": "",
-      "image": "",
-      "rating": "",
-      "comment": ""
-    },
-    {
-      "id": "b2ef",
-      "name": "",
-      "restaurant": "",
-      "image": "",
-      "rating": "",
-      "comment": ""
-    },
-    {
-      "id": "67be",
-      "name": "1",
-      "restaurant": "",
-      "image": "",
-      "rating": "",
-      "comment": ""
-    },
-    {
-      "id": "2b71",
-      "name": "",
-      "restaurant": "",
-      "image": "",
-      "rating": "",
-      "comment": ""
-    },
-    {
-      "id": "ce52",
-      "name": "",
-      "restaurant": "",
-      "image": "",
-      "rating": "",
-      "comment": ""
-    },
-    {
-      "id": "048a",
-      "name": "",
-      "restaurant": "",
-      "image": "",
-      "rating": "",
-      "comment": ""
-    },
-    {
-      "id": "e832",
-      "name": "",
-      "restaurant": "",
-      "image": "",
-      "rating": "",
-      "comment": ""
     }
+
   ]
 }
